@@ -1,0 +1,165 @@
+
+.line-height{
+    line-height: 28px;
+}
+.margin_top_bot{
+    margin: 24px 0;
+}
+
+.adver-bg{
+    background-color: #f4faf6;
+}
+
+.grid.wide.adver-center{
+    margin-top: 50px;
+}
+
+.grid.wide.content_header{
+    margin-top: 68px;
+}
+
+.adver-center a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.adver-center img{
+    width: 100%;
+}
+.adver-center h4 a{
+    display: block;
+    padding: 16px 12px;
+    color: #000;
+    font-size: 32px;
+}
+
+.adver-mid{
+    display: block;
+    color: #333;
+    padding: 12px;
+    opacity: 0.7;
+}
+
+.adver-bot{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-top: 1px solid #ccc;
+}
+
+.content .header_title{
+    font-size: 36px;
+    line-height: 50px;
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.author{
+    display: flex;
+    padding: 24px 0;
+}
+
+.author img{
+    width: 38px;
+    border-radius: 50%;
+}
+
+.author a{
+    padding: 0 8px;
+    align-self: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.author span{
+    align-self: center;
+    font-size: 14px;
+    color: #a0a4a8;
+}
+
+.content_intro-wrap .content_intro-text{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.content_info .content_title{
+    padding: 32px 0;
+}
+.content_info-italics{
+    display: inline-block;
+}
+.content_info-oblique{
+    font-style: oblique;
+}
+
+.article-head{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px 0;
+    border-top: 1px solid #ccc;
+}
+
+.article-item_title a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.article-item-text a{
+    color: #333;
+    opacity: 0.7;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.article-item img {
+    width: 100%;
+}
+
+
+.side-bar{
+    margin-top: 120px;
+}
+
+.side-bar_adver {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ccc;
+}
+
+.side-bar_adver img{
+    width: 100%;
+}
+
+.side-bar_adver-2{
+    background-color: rgb(165, 163, 163);
+    padding: 28px 38px;
+}
+
+.adver_wrap{
+    display: block;
+    background-color: #fff;
+    padding: 8px 0;
+    margin: 20px 0;
+}
+
+.adver_wrap:hover{
+    border: 3px solid red;
+}
+
+.adver_wrap p, .adver_wrap sup{
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+@media only screen and (max-width: 63.9375em){
+    .margin-l-r{
+        margin: 0 20px;
+    }
+}

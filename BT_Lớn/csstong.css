@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: #fff;
+    font-size: 16px;
+    font-family:'Roboto',sans-serif;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.header{
+    position : fixed ;
+    top:0;
+    left:0;
+    right: 0;
+    box-shadow: 0 0 7px rgb(0 0 0 / 50%);
+    background-color: #fff;
+    z-index: 999;
+}
+.header .nav{
+    padding: 8px 0px; 
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+ul.menu_header{
+    list-style: none;
+    display: flex;
+    align-self: center;
+    margin: 0;
+    font-size: 14px;
+}
+ul.menu_header .logo_header > img{
+}
+ul.menu_header .logo_header{
+}
+ul.menu_header > li.sub_header{
+    padding: 15px 0;
+    padding-right: 30px;
+}
+ul.menu_header > li.sub_header > a{
+    text-decoration: none;
+    display: block;
+    color: #21212B;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.subcontent{
+    display: none !important;
+    position: absolute;
+    top: 55px;
+    list-style: none;
+    background-color: #0d284e;
+    width: 250px
+}
+ul.menu_header > li:hover > a{
+    color: #105ac0;
+}
+.sub_header:hover .subcontent{
+    display: block !important;
+}
+.subcontent > li{
+    padding: 15px;
+    border-bottom: 2px solid #102238;
+}
+.subcontent > li > a{
+    text-decoration: none;
+    color:#ffffff;
+}
+.subcontent > li:hover a{
+    color: #fcc26f;
+}
+
+.banner{
+}
+.banner img{
+    width: 100%;
+    margin-top: 65px;
+}
+
+
+.footer{
+    background-color: #f1f1f1;
+    /* height: 200px; */
+    color: #1F2224;
+}
+.footer .end{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+.footer .end div{
+    margin-left: 50px;
+}
+.footer .end h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.footer .end p{
+    font-size: 16px;
+}
+.footer .end i{
+    color: #f97695;
+    padding-right: 5px;
+}
+
+.footer .end .end1{
+    width: 40%;
+    line-height: 30px;
+}
+.footer .end .end2{
+    margin-top: 50px;
+    width: 30%;
+    line-height: 30px;
+}
+.footer .end .end3{
+    width: 30%;
+}
+.footer .end .end3 i{
+    font-size: 38px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.last{
+    text-align: center;
+    padding: 30px 0;
+    color: #1F2224;
+    font-size: 16px;
+}
+
+a.go{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+	padding: 20px 30px;
+    background-color:#555;
+    border-radius:999px;
+	cursor:pointer;
+	opacity:0.6;
+	color:#fff;
+    font-size: 24px;
+    z-index: 1;
+}
+a.go:hover{
+	opacity:1;
+}
+
+
+
+
+
+/* Mobile nav */
+.nav_bars-btn{
+    color: #111;
+    font-size: 26px;
+    padding-top: 10px;
+    display: none;
+}
+.nav_overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.nav_mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 230px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+.nav_mobile-list{
+    margin: 24px 0 0 20px;
+    list-style: none;
+}
+.nav_mobile-link{
+    text-decoration: none;
+    color: #222f6e;
+    display: block;
+    padding: 30px 0 10px 0;
+    font-size: 16px;
+}
+.nav_mobile-link i{
+    padding-right: 13px;
+}
+.nav_mobile-close{
+    font-size: 30px;
+    color: #222f6e;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.nav_input:checked ~ .nav_overlay {
+    display: block;
+}
+.nav_input:checked ~ .nav_mobile{
+     transform: translateX(0%); 
+     opacity: 1;
+}
+
+
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 63.9375em){
+    .nav_bars-btn{
+        display: block;
+    }
+    .nav_pc{
+        display: none;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 46.1875em){
+    .end{
+        flex-direction: column;
+    }
+    .end div{
+        min-width: 75%;
+    }
+    .end1{
+        margin-bottom: -20px;
+    }
+    .end2{
+        margin-bottom: 30px;
+    }
+}
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    
+}

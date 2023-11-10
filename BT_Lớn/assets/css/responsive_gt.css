@@ -1,0 +1,18 @@
+
+/*   MOBILE AND TABLET  */
+
+@media only screen and (max-width: 1023px){
+    
+}
+
+/*   MOBILE  */
+
+@media only screen and (max-width: 739px){
+
+}
+
+/*   TABLET   */
+
+@media only screen and (min-width: 739px) and (max-width: 1023px){
+    
+}

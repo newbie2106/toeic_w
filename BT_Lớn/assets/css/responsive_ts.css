@@ -1,0 +1,68 @@
+
+/*   MOBILE AND TABLET  */
+
+@media only screen and (max-width: 1023px){
+    .grid.modal-container{
+        max-width: 90%;
+        margin: auto;
+    }
+    .modal-register{
+        font-size: 30px;
+        letter-spacing: 3px;
+        padding: 48px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+/*   MOBILE  */
+
+@media only screen and (max-width: 739px){
+    .header{
+        min-height: 40px;
+    }
+    .nav {
+        display: none;
+    }
+
+    .content_intro-wrapper p {
+        margin: 24px 0;
+        line-height: 24px;
+        text-align: justify;
+    }
+    table tbody th:first-of-type, 
+    table thead th:first-of-type{
+        display: none;
+    }
+
+    .ranking_excel-title{
+        line-height:24px;
+    }
+
+    .ranking_excel-title, .ranking_excel-text{
+        margin: 4px 17px;
+    }
+    .content_intro h1::after, .service h1::after,
+    .content_intro h1::before, .service h1::before
+    {
+        display: none;
+    }
+    p.content_intro-text{
+        margin: 0 12px;
+    }
+}
+
+/*   TABLET   */
+
+@media only screen and (min-width: 739px) and (max-width: 1023px){
+    .content_intro h1::after, .service h1::after{
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 2px;
+        top: 66px;
+        left: 36%;
+        background-color: red;
+    }
+}
